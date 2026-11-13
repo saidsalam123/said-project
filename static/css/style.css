@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: Salam;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #fff;
+}
+
+a {
+    color: #0070c9;
+    text-decoration: none;
+}
+
+/* Шапка */
+header {
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+
+header nav {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links a {
+    margin-left: 16px;
+}
+
+/* Контент */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Каталог */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    color: #333;
+    display: block;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.card h2 {
+    font-size: 16px;
+    padding: 8px 12px 0;
+}
+
+.card .price {
+    padding: 4px 12px 12px;
+    font-weight: bold;
+}
+
+/* Страница товара */
+.detail img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.detail .price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.detail p {
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+/* Прочее */
+.empty {
+    color: #777;
+}
+
+footer {
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 16px;
+    color: #777;
+    margin-top: 40px;
+}

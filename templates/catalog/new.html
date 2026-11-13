@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Новинки{% endblock %}
+{% block content %}
+<h1>Новинки недели</h1>
+
+{% if products %}
+<div class="grid">
+    {% for product in products %}
+    <a class="card" href="{% url 'product_detail' product.pk %}">
+        {% if product.image %}
+        <img src="{{ product.image.url }}" alt="{{ product.name }}">
+        {% else %}
+        <img src="https://via.placeholder.com/300x200?text=Нет+фото" alt="">
+        {% endif %}
+        <h2>{{ product.name }}</h2>
+        <p class="price">{{ product.price }} $.</p>
+    </a>
+    {% endfor %}
+</div>
+{% else %}
+<p class="empty">За последнюю неделю новых товаров не было.</p>
+{% endif %}
+{% endblock %}
